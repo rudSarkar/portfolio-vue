@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar color="#05364d" dark fixed app>
+    <v-toolbar  light fixed app>
       <v-toolbar-title>Portfolio Demo</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -71,5 +71,14 @@ export default {
   100%{
   transform: translateY(-400px);
  }
+}
+
+@media(max-width:991px) {
+  .banner_content {
+    margin-top: 150px
+  }
+  .container {
+    max-width: 960px;
+  }
 }
 </style>

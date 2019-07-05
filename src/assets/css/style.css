@@ -41,3 +41,27 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	color: #05364d;
 }
+.banner_content {
+    margin-left: 50px;
+    margin-top: 40px
+}
+
+@media(max-width:991px) {
+    .banner_content {
+        margin-left: 0
+    }
+}
+@media(max-width:768px) {
+    .sm-text-left {
+        text-align: left;
+    }
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.margin-b-0 {
+    margin-bottom: 0 !important;
+}

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    Portfolio
+    <h1>Portfolio</h1>
   </v-container>
 </template>
 

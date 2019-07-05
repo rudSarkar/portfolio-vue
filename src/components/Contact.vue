@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    
+    Contact
   </v-container>
 </template>
 
