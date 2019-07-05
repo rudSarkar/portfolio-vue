@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.home_banner_area {
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
+}
+.banner_content {
+    text-align: left;
+}
+.banner_content h3 {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #797979;
+}
+.banner_content h1 {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.banner_content h5 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: roboto,sans-serif;
+	font-weight: 700;
+	color: #05364d;
+}

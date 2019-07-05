@@ -1,18 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-toolbar color="#05364d" dark fixed app>
+      <v-toolbar-title>Portfolio Demo</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat to="/">Home</v-btn>
+        <v-btn flat to="/about">About</v-btn>
+        <v-btn flat to="/experience">Experience</v-btn>
+        <v-btn flat to="/portfolio">Portfolio</v-btn>
+        <v-btn flat to="/contact">Contact</v-btn>
+      </v-toolbar-items>
+      <v-menu class="hidden-md-and-up">
+        <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
+        <v-list>
+            <v-list-tile-content>
+              <v-btn flat to="/">Home</v-btn>
+              <v-btn flat to="/about">About</v-btn>
+              <v-btn flat to="/experience">Experience</v-btn>
+              <v-btn flat to="/portfolio">Portfolio</v-btn>
+              <v-btn flat to="/contact">Contact</v-btn>
+            </v-list-tile-content>
+        </v-list>
+      </v-menu>
+    </v-toolbar>
+
+
+    <v-content>
+      <transition name="moveInUp">
+        <router-view/>
+      </transition>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
@@ -23,6 +46,30 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.moveInUp-enter-active{
+  animation: fadeIn 2s ease-in;
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.moveInUp-leave-active{
+  animation: moveInUp .3s ease-in;
+}
+@keyframes moveInUp{
+ 0%{
+  transform: translateY(0);
+ }
+  100%{
+  transform: translateY(-400px);
+ }
 }
 </style>
