@@ -2,9 +2,11 @@ import Vue from 'vue'
 import './plugins/vuetify'
 import App from './App.vue'
 import Vuetify from 'vuetify'
+import vWow from 'v-wow'
 import router from './router'
 
 Vue.use(Vuetify)
+Vue.use(vWow)
 
 Vue.config.productionTip = false
 

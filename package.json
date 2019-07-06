@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "v-wow": "git+https://github.com/guisoares2011/vue-wow.git",
     "vue": "^2.6.10",
     "vue-router": "^3.0.7",
     "vuetify": "^1.5.16"

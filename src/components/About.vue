@@ -18,7 +18,7 @@
             </div>
             <h5>PHP <span class="color-heading">87%</span></h5>
             <v-progress-linear
-              color="info"
+              color="secondary"
               height="10"
               value="87"
             ></v-progress-linear>
@@ -27,6 +27,18 @@
               color="success"
               height="10"
               value="70"
+            ></v-progress-linear>
+        <h5>Javascript <span class="color-heading">50%</span></h5>
+        <v-progress-linear
+              color="warning"
+              height="10"
+              value="50"
+            ></v-progress-linear>
+      <h5>Software Development (C#) <span class="color-heading">77%</span></h5>
+      <v-progress-linear
+              color="error"
+              height="10"
+              value="77"
             ></v-progress-linear>
       </v-flex>
     </v-layout>
