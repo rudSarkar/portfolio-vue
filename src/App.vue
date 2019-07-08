@@ -8,6 +8,7 @@
         <v-btn flat to="/about">About</v-btn>
         <v-btn flat to="/experience">Experience</v-btn>
         <v-btn flat to="/portfolio">Portfolio</v-btn>
+        <v-btn flat to="/blog">Blog</v-btn>
         <v-btn flat to="/contact">Contact</v-btn>
       </v-toolbar-items>
       <v-menu class="hidden-md-and-up">
@@ -18,6 +19,7 @@
               <v-btn flat to="/about">About</v-btn>
               <v-btn flat to="/experience">Experience</v-btn>
               <v-btn flat to="/portfolio">Portfolio</v-btn>
+              <v-btn flat to="/blog">Blog</v-btn>
               <v-btn flat to="/contact">Contact</v-btn>
             </v-list-tile-content>
         </v-list>

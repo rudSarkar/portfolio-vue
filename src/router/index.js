@@ -4,8 +4,10 @@ import home from '@/components/Home'
 import about from '@/components/About'
 import experience from '@/components/Experience'
 import portfolio from '@/components/Portfolio'
+import blog from '@/components/Blog'
 import contact from '@/components/Contact'
 import notfound from '@/components/NotFound'
+import details from '@/components/Details'
 
 Vue.use(Router)
 
@@ -31,6 +33,16 @@ export default new Router({
             path: '/portfolio',
             name: 'Portfolio',
             component: portfolio
+        },
+        {
+            path: '/blog',
+            name: 'Blog',
+            component: blog
+        },
+        {
+        path: '/details/:Bslug',
+        name: 'Details',
+        component: details
         },
         {
             path: '/contact',
